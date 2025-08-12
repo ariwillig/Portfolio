@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="Portfolio.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Modeled after suyashkumar.com-->
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .parallax {
+            background-image: url(natureportfolio.jpg);
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: relative;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 1px;
+        }
+        .parallax2{
+            background-image: url(natureportfolio.jpg);
+            height: 50vh;
+            background-attachment: fixed;
+            background-position: relative;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 1px;
+            position: relative;
+        }
+    </style>
+    </head>
+    <body>
+        <div class = "parallax">
+            <div class = "navbar-content">
+            <h1 class = 'name'>Ari Willig</h1>
+            <div class = "nav-links">
+                <a href = '#currently' class = "About">About</a>
+                <a href="#projects" class="Projects">Projects</a>
+                <a href="#contact" class="Contact">Contact</a>
+            </div>
+            </div>
+            <div class = "navbar"></div>
+            <h2 class = 'titlename'>Ari Willig</h2>
+            <h3 class = 'intro'>Biomedical and Software Engineer</h3>
+
+
+        </div>
+        <div id = 'currently' class = "currently">
+            <h3 class = currently-title>Thanks for checking out my page!</h3>
+            <img src = climbingportfolio.jpg alt = "Portfolio Image" class = "climbing" />
+            <h1 class = currtit>Currently:</h1>
+            <ul class = "currently-list" style = "line-height: 200%">
+                <li><strong>Student</strong> at <a href="https://www.duke.edu" class="org" target="_blank">Duke University</a> studying biomedical engineering and computer science</li>
+                <li><strong>Manufacturing Engineering Intern</strong> at <a href="https://www.zimmerbiomet.com/en" class="org" target="_blank">Zimmer Biomet</a>, leveraging orthotics to 
+                    alleviate pain and <br> improve quality of life for people around the world</li>
+            </ul>
+            <h2 class = prevtit>Previously:</h2>
+            <ul class = "previously-list" style = "line-height: 200%">
+                <li><strong>Researcher</strong> at the <a href="https://seguralab.duke.edu" class="org" target="_blank">Segura Lab</a> studying the formation of neural progenitor cell organelles</li>
+                <li><strong>Research and Development Intern</strong> at <a href="https://skeletaldynamics.com" class="org" target="_blank">Skeletal Dynamics</a> designing implantable devices for <br>proximal humerus repair</li>
+                <li><strong>Intern</strong> at
+                     <a href="https://www.orthoproassociates.com" class="org" target="_blank">OrthoPro Associates</a> where I assisted in the evaluation, fabrication, and fitting of artificial limbs</li>
+            </ul>
+            <h2 class = inttit>Interests:</h2>
+            <ul class = "interests" style = "line-height: 200%">
+                <li>I have been a <strong>competitive rock climber</strong> for over 8 years and try to enjoy the outdoors any chance I get</li>
+                <li>I've been playing guitar since middle school and was trained mostly in the <a href="https://en.wikipedia.org/wiki/Classical_guitar" class="org" target="_blank">Spanish Classical style</a></li>
+                <li>I adore reading and have made my way through almost all of the <a href="https://www.goodreads.com/genres/fantasy" class="org" target="_blank">fantasy recommendations</a> I can find</li>
+                <li>I am extremely active so I try to practice basketball and yoga as much as I can</li>
+            </ul>
+            <a href = "https://www.linkedin.com/in/ari-willig-899439262/" target = "_blank" class = "linkedin">LinkedIn</a>
+            <a href = "Resumepage.html" target = "_blank" class = "resume">Resume</a>
+
+        </div>
+        <div id = 'projects' class = "projects">
+            <h1 class = "project-tit">Side Projects</h1>
+            <!--PBL mercury movement, tcp/html web thing, lightbox, this website, pacemaker--> 
+            <div class = "project-grid">
+                <div class = "project-tile" data-modal = "modal1">
+                    <img src = pacemakercircuit.jpg alt = "Pacemaker Project">
+                    <div class = "project-title">Bluetooth Pacemaker</div>
+                </div>
+                <div class = "project-tile" data-modal = "modal2">
+                    <img src = ingestion.png alt = "Mercury Modeling">
+                    <div class = "project-title">Mercury Project</div>
+                </div>
+                <div class = "project-tile" data-modal = "modal3">
+                    <img src = bert.jpg alt = "Lightbox Project">
+                    <div class = "project-title">Lightbox</div>
+                </div>
+                <div class = "project-tile" data-modal = "modal4">
+                    <img src = website.png alt = "Website">
+                    <div class = "project-title">This Website!</div>
+                </div>
+            </div>
+            <!-- Modal division -->
+             <div id = "modal1" class = "project-modal">
+                <div class = "modal-content">
+                    <span class = "close">&times;</span>
+                    <h2>Pacemaker Project</h2>
+                    <p>
+                        I have always been extremely interested in the mechanics of heart function and how electrical signals contribute to keeping us alive.
+                        Building out a pacemaker from scratch taught me how to integrate operational amplifiers, filtering circuitry, C++ programming, 
+                        and bluetooth communication devices all in one medical device. Testing the pacemaker on ECGs and frog anatomy allowed me to refine the design
+                        and eventually create a fully functional pacemaker that induced heartbeats in response to electrical failure of the organ. The pacemaker was also
+                        able to send data out to a bluetooth device (my iPhone) and record past measurements.
+                    </p>
+                    <div class = "modal-images">
+                        <img src = "heartpulse.png" alt = "Pacemaker firing to set correct least time interval" style = "width:60%">
+                        <img src = "pacemakercircuit.jpg" alt = "Circuitry" style = "width:50%">
+                        <img src = "bluetooth.jpeg" alt = "Bluetooth transmission of pacemaker readings" style = "width:40%; height:675px" >
+                    </div>
+                </div>
+             </div>
+             <div id = "modal2" class = "project-modal">
+                <div class = "modal-content">
+                    <span class = "close">&times;</span>
+                    <h2>Mercury Project</h2>
+                    <p>
+                        Methylmercury (MeHg) poisoning is a pressing global threat to human health. In past global health crises, methylmercury 
+                        poisoning outbreaks have taken hundreds of lives and left millions with persistent neurodevelopmental symptoms. 
+                        The heavy metal is not only lethal in high doses, but can also cause debilitating neurological, cardiovascular, liver, and kidney damage.
+                        Along with a team of classmates, I developed a model to monitor the mass flow rates, accumulation, 
+                        and transformation of methylmercury and its derivatives across both a healthy and unhealthy chronic 60-day dosage period. This model used a
+                        simplified version of the most endangered organs and substantial systems of differential equations to reproduce the accumulation of
+                        methylmercury across the human body.
+                    </p>
+                    <div class = "modal-images">
+                        <img src = "pbl1fullcircuit.png" alt = "Human body mercury accumulation diagram" style = "width:100%">
+                        <img src = "diffeq.png" alt = "Differential equation modeling" style = "width:100%">
+                        <img src = "mercuryaccumulation.png" alt = "Mercury accumulation comparison for each organ in scope" style = "width:100%" >
+                    </div>
+                </div>
+             </div>
+             <div id = "modal3" class = "project-modal">
+                <div class = "modal-content">
+                    <span class = "close">&times;</span>
+                    <h2>Lightbox</h2>
+                    <p>
+                        A lightbox, while not being unbelievably complex, integrates all of the main components of medical device prototyping.
+                        A few months back I designed a lightbox in three parts, a CAD model, PCB design and soldering, and firmware integration.
+                        Though I have extensive experience in CAD through past internships and courses at Duke University, modeling Bert from Sesame Street
+                        was a fun little design and I thouroughly enjoyed it. Designing a PCB from scratch using KiCad and being able to solder electrical components 
+                        and an Arduino to it was challenging but an amazing learning experience. Finally, integrating software with the arduino allowed me to learn
+                        about state machines and see the project come to life. The final product was a lightbox that used firmware to control three LEDs independently,
+                        controlling their pulse durations and brightness with potentiometers soldered into the PCB.
+                    </p>
+                    <div class = "modal-images">
+                        <img src = "schem.png" alt = "PCB schematic" style = "width:40%">
+                        <img src = "schematic.png" alt = "PCB schematic" style = "width:50%">
+                        <img src = "bert.jpg" alt = "Lightbox model" style = "width:50%; height:500px">
+                    </div>
+                </div>
+             </div>
+             <div id = "modal4" class = "project-modal">
+                <div class = "modal-content">
+                    <span class = "close">&times;</span>
+                    <h2>This Website!</h2>
+                    <p>
+                        HTML, CSS, and JavaScript are extremely versatile programming languages used across the entire internet in a plethora of ways.
+                        Teaching myself these languages to build this website from scratch was extremely fun and I now feel very proficient in using
+                        these languages together. Using HTML to define and build out the structure for the site, CSS to style it and implement what I
+                        had envisioned, and JavaScript to add in functionality and finishing touches resulted in what you are seeing right now!
+                    </p>
+                    <img src = "website.png" alt = "Website Image" style = "width:100%">
+                </div>
+             </div>
+        </div>
+        <div id = 'contact' class = "parallax2">
+            <h1 class="email"><i class="fas fa-envelope"></i> <strong>Email</strong></h1>
+            <p class = "pemail">ari.willig@duke.edu</p>
+            <a href = "https://www.linkedin.com/in/ari-willig-899439262/" target = "_blank" class = "linkicon"><i class="fa-brands fa-linkedin"></i></a>
+            <p class = "tm">&copy; Ari Willig</p>
+        </div>
+        <script>
+            window.onscroll = function() {showNav()};
+            var trigger = 400;
+            function showNav() {
+                var scrollpos = window.scrollY;
+                if (scrollpos > trigger) {
+                    document.querySelector(".navbar").classList.add('show');
+                } else {
+                    document.querySelector(".navbar").classList.remove('show');
+                }
+            }
+            document.querySelectorAll(".navbar-content a").forEach(anchor=> {
+                anchor.addEventListener('click', function(event) {
+                    event.preventDefault();
+
+                    const TargetId = this.getAttribute('href');
+                    const TargetElement = document.querySelector(TargetId);
+
+                    if (TargetElement){
+                        const offset = 50;
+                        const position  = TargetElement.offsetTop - offset;
+                        window.scrollTo({
+                        top: position,
+                        behavior: "smooth"
+                    });
+                    }
+                });
+            });
+            //modal open
+            document.querySelectorAll('.project-tile').forEach(tile => {
+                tile.addEventListener('click', () => {
+                    const modalId = tile.getAttribute('data-modal');
+                    document.getElementById(modalId).style.display = 'block';
+                });
+            });
+            //Modal close
+            document.querySelectorAll('.close').forEach(btn => {
+                btn.addEventListener('click', () =>{
+                    btn.closest('.project-modal').style.display = 'none';
+                });
+            });
+            //outside content click
+            document.querySelectorAll('.project-modal').forEach(modal => {
+                modal.addEventListener('click', (e)=> {
+                    if (e.target === modal){
+                        modal.style.display = 'none';
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
