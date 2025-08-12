@@ -375,3 +375,24 @@ html, body {
   box-sizing: border-box;
   object-fit: cover;
 }
+.currently-flex-container {
+  display: flex;
+  align-items: center; /* keeps top edges aligned */
+  justify-content: center; /* centers horizontally */
+  gap: 30px;
+  flex-wrap: nowrap;
+  max-width: calc(100% - 10vw); /* optional: constrain total width */
+  margin: 0 auto; /* center the flex container itself */
+}
+
+.currently-flex-container img.climbing {
+  width: 25vw;
+  max-width: 100%;
+  height: auto;
+  float: none; /* remove float */
+  margin: 0; /* remove margin, flex controls spacing */
+}
+.currently-text {
+  flex: 1; /* take remaining space */
+  text-align: left; /* keep text aligned left within its box */
+}
