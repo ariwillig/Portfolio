@@ -81,6 +81,10 @@
             <h1 class = "project-tit">Side Projects</h1>
             <!--PBL mercury movement, tcp/html web thing, lightbox, this website, pacemaker--> 
             <div class = "project-grid">
+                <div class = "project-tile featured" data-modal = "modal5">
+                    <img src = "Auralert_Assembly_Rendering.png" alt = "Seizure Prediction Wearable">
+                    <div class = "project-title">Seizure Prediction Wearable</div>
+                </div>
                 <div class = "project-tile" data-modal = "modal1">
                     <img src = pacemakercircuit.jpg alt = "Pacemaker Project">
                     <div class = "project-title">Bluetooth Pacemaker</div>
@@ -97,10 +101,6 @@
                     <img src = website.png alt = "Website">
                     <div class = "project-title">This Website!</div>
                 </div>
-                <div class = "project-tile" data-modal = "modal5">
-                    <img src = "" alt = "Seizure Prediction Wearable">
-                    <div class = "project-title">Seizure Prediction Wearable</div>
-                </div>
             </div>
             <!-- Modal division -->
              <div id = "modal1" class = "project-modal">
@@ -108,11 +108,13 @@
                     <span class = "close">&times;</span>
                     <h2>Pacemaker Project</h2>
                     <p>
-                        I have always been extremely interested in the mechanics of heart function and how electrical signals contribute to keeping us alive.
-                        Building out a pacemaker from scratch taught me how to integrate operational amplifiers, filtering circuitry, C++ programming, 
-                        and bluetooth communication devices all in one medical device. Testing the pacemaker on ECGs and frog anatomy allowed me to refine the design
-                        and eventually create a fully functional pacemaker that induced heartbeats in response to electrical failure of the organ. The pacemaker was also
-                        able to send data out to a bluetooth device (my iPhone) and record past measurements.
+                        I designed and built a Bluetooth-enabled pacemaker from scratch to better understand the heart's electrical signals. 
+                        The device integrates operational amplifier circuitry, signal filtering, C++ firmware, and a Bluetooth module into a 
+                        single system that monitors cardiac activity and delivers a pacing pulse when the heart's own electrical activity fails. 
+                        I iterated on the design by testing against ECG signals and frog heart tissue, eventually producing a fully functional 
+                        pacemaker that induced heartbeats in response to simulated electrical failure. The pacemaker also transmitted measurements 
+                        to my iPhone over Bluetooth, where past readings could be recorded and reviewed. The project gave me hands-on experience with 
+                        analog circuit design, embedded programming, wireless communication, and in-vivo device testing.
                     </p>
                     <div class = "modal-images">
                         <img src = "heartpulse.png" alt = "Pacemaker firing to set correct least time interval" style = "width:60%">
@@ -126,13 +128,13 @@
                     <span class = "close">&times;</span>
                     <h2>Mercury Project</h2>
                     <p>
-                        Methylmercury (MeHg) poisoning is a pressing global threat to human health. In past global health crises, methylmercury 
-                        poisoning outbreaks have taken hundreds of lives and left millions with persistent neurodevelopmental symptoms. 
-                        The heavy metal is not only lethal in high doses, but can also cause debilitating neurological, cardiovascular, liver, and kidney damage.
-                        Along with a team of classmates, I developed a model to monitor the mass flow rates, accumulation, 
-                        and transformation of methylmercury and its derivatives across both a healthy and unhealthy chronic 60-day dosage period. This model used a
-                        simplified version of the most endangered organs and substantial systems of differential equations to reproduce the accumulation of
-                        methylmercury across the human body.
+                        Methylmercury (MeHg) poisoning is a persistent global health threat. Past outbreaks have claimed hundreds of lives and left 
+                        millions with lasting neurodevelopmental damage, and even sublethal exposure can cause neurological, cardiovascular, liver, 
+                        and kidney injury. With a team of classmates, I developed a compartmental model of methylmercury mass flow, accumulation, 
+                        and transformation in the human body, built from a system of differential equations representing the most vulnerable 
+                        organs and systems. We simulated both healthy and unhealthy chronic exposure over a 60-day dosing period and compared 
+                        how mercury accumulated in each organ in scope. The project strengthened my skills in physiological modeling, 
+                        differential equations, and translating a real-world health problem into a quantitative framework.
                     </p>
                     <div class = "modal-images">
                         <img src = "pbl1fullcircuit.png" alt = "Human body mercury accumulation diagram" style = "width:100%">
@@ -146,13 +148,12 @@
                     <span class = "close">&times;</span>
                     <h2>Lightbox</h2>
                     <p>
-                        A lightbox, while not being unbelievably complex, integrates all of the main components of medical device prototyping.
-                        A few months back I designed a lightbox in three parts, a CAD model, PCB design and soldering, and firmware integration.
-                        Though I have extensive experience in CAD through past internships and courses at Duke University, modeling Bert from Sesame Street
-                        was a fun little design and I thouroughly enjoyed it. Designing a PCB from scratch using KiCad and being able to solder electrical components 
-                        and an Arduino to it was challenging but an amazing learning experience. Finally, integrating software with the arduino allowed me to learn
-                        about state machines and see the project come to life. The final product was a lightbox that used firmware to control three LEDs independently,
-                        controlling their pulse durations and brightness with potentiometers soldered into the PCB.
+                        This lightbox is a small but complete example of the medical device prototyping process, spanning mechanical design, 
+                        electronics, and firmware. I modeled the enclosure in CAD (in the shape of Bert from Sesame Street), designed a 
+                        custom PCB in KiCad, and soldered the components and an Arduino onto the board. I then wrote firmware, structured as 
+                        a state machine, that controls three LEDs independently, with pulse duration and brightness adjustable through 
+                        potentiometers mounted on the PCB. The project gave me hands-on experience with CAD, PCB design and assembly, embedded 
+                        firmware, and integrating hardware and software into a working product.
                     </p>
                     <div class = "modal-images">
                         <img src = "schem.png" alt = "PCB schematic" style = "width:40%">
@@ -166,10 +167,10 @@
                     <span class = "close">&times;</span>
                     <h2>This Website!</h2>
                     <p>
-                        HTML, CSS, and JavaScript are extremely versatile programming languages used across the entire internet in a plethora of ways.
-                        Teaching myself these languages to build this website from scratch was extremely fun and I now feel very proficient in using
-                        these languages together. Using HTML to define and build out the structure for the site, CSS to style it and implement what I
-                        had envisioned, and JavaScript to add in functionality and finishing touches resulted in what you are seeing right now!
+                        I designed and built this website from scratch, teaching myself HTML, CSS, and JavaScript along the way. 
+                        HTML defines the structure, CSS handles the layout, parallax effects, and responsive styling, and JavaScript 
+                        powers the interactive navigation and project modals. The project gave me hands-on experience with front-end development, 
+                        responsive design, and building a clean, user-friendly presentation of my work.
                     </p>
                     <img src = "website.png" alt = "Website Image" style = "width:100%">
                 </div>
@@ -198,8 +199,14 @@
                     </p>
                     <div class = "modal-images">
                         <figure>
+                            <img src = "Auralert_Poster.png" alt = "Auralert Poster" style = "width:100%">
+                            <figcaption>Final poster presentation for auralert seizure prediction device. 
+                                Certain images and names removed for confidentiality.</figcaption>
+                        </figure>
+                        <figure>
                             <img src="Auralert_Assembly_Rendering.png" alt="Auralert Assembly" style="width:100%">
-                            <figcaption>Rendering of the full Auralert assembly, showing the behind-the-ear electrode holder, back-mounted processing unit, and harness.</figcaption>
+                            <figcaption>Rendering of the auralert assembly, showing the signal processing unit and microcontrollers used 
+                                for wireless commmunication to the web server hosting the classification model.</figcaption>
                         </figure>
                         <figure>
                             <img src="Alpha_Power_Variance_From_Occipital_Lobe_EEG.png" alt="Alpha Power" style="width:100%">
@@ -211,23 +218,7 @@
                         </figure>
                         <figure>
                             <img src="Auralert_Final_Prototype.png" alt="Final Prototype" style="width:100%">
-                            <figcaption>The final Auralert prototype: behind-the-ear electrode holder, back-mounted processing unit, and adjustable fabric harness.</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="Auralert_Pipeline.png" alt="Auralert Pipeline" style="width:100%">
-                            <figcaption>End-to-end Auralert pipeline, from EEG acquisition and wireless transmission to ML classification and iPhone alerts.</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="EEG_Circuit.png" alt="EEG Circuit" style="width:100%">
-                            <figcaption>Assembled EEG acquisition circuit used to validate the analog front end.</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="EEG_Circuit_Schematic.png" alt="EEG Circuit Schematic" style="width:100%">
-                            <figcaption>Schematic of the EEG analog front end, including the amplification, high-pass, low-pass, and notch filtering stages.</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="EEG_ML_Outline.png" alt="Dual-Input Model" style="width:100%">
-                            <figcaption>Dual-input model architecture: a CNN processes raw EEG while an MLP processes extracted bandpower features.</figcaption>
+                            <figcaption>The final auralert prototype: behind-the-ear electrode holder, back-mounted processing unit, and adjustable fabric harness.</figcaption>
                         </figure>
                         <figure>
                             <img src="EEG_Processing_ECAD.png" alt="ECAD" style="width:100%">
@@ -235,23 +226,16 @@
                         </figure>
                         <figure>
                             <img src="EEG_Signal_Detection.png" alt="Signal Detection" style="width:100%">
-                            <figcaption>EEG signal detection results comparing the Auralert front end against the iWorx laboratory-grade system.</figcaption>
+                            <figcaption>EEG signal detection results.</figcaption>
                         </figure>
                         <figure>
                             <img src="Processing_Unit_Rendering.png" alt="Processing Unit 3D Render" style="width:100%">
-                            <figcaption>3D rendering of the back-mounted processing unit enclosure housing the PCB and battery.</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="Real_World_Interictal.png" alt="Real World Interictal Classifications" style="width:100%">
-                            <figcaption>Percentage of correct interictal classifications from non-epileptic test subjects across stationary, head movement, and walking conditions.</figcaption>
+                            <figcaption>3D rendering of the PCB, integrating the signal acquisition circuitry and microcontroller used for wireless communication 
+                                with the classification model.</figcaption>
                         </figure>
                         <figure>
                             <img src="Seizure_Detection_Matrix.png" alt="Detection Confusion Matrix" style="width:100%">
                             <figcaption>Confusion matrix for ictal versus non-ictal seizure detection on held-out CHB-MIT clinical EEG data.</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="Seizure_Prediction_Matrix.png" alt="Prediction Confusion Matrix" style="width:100%">
-                            <figcaption>Confusion matrix for the model's interictal, pre-ictal, and ictal state predictions.</figcaption>
                         </figure>
                     </div>
                 </div>
@@ -259,7 +243,7 @@
         </div>
         <div id = 'contact' class = "parallax2">
             <h1 class="email"><i class="fas fa-envelope"></i> <strong>Email</strong></h1>
-            <p class = "pemail">ari.willig@duke.edu</p>
+            <p class = "pemail">willig.j.ari@gmail.com</p>
             <a href = "https://www.linkedin.com/in/ari-willig-899439262/" target = "_blank" class = "linkicon"><i class="fa-brands fa-linkedin"></i></a>
             <p class = "tm">&copy; Ari Willig</p>
         </div>
