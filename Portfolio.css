@@ -309,11 +309,12 @@ html, body {
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    background: #fff;
 }
 .project-tile img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.3s ease;
 }
 
@@ -325,7 +326,7 @@ html, body {
 .project-tile.featured img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .project-tile:hover img{
