@@ -90,12 +90,16 @@
                     <div class = "project-title">Mercury Project</div>
                 </div>
                 <div class = "project-tile" data-modal = "modal3">
-                    <img src = bert.jpg alt = "Lightbox Project">
+                    <img src = schematic.png alt = "Lightbox Project">
                     <div class = "project-title">Lightbox</div>
                 </div>
                 <div class = "project-tile" data-modal = "modal4">
                     <img src = website.png alt = "Website">
                     <div class = "project-title">This Website!</div>
+                </div>
+                <div class = "project-tile" data-modal = "modal5">
+                    <img src = "" alt = "Seizure Prediction Wearable">
+                    <div class = "project-title">Seizure Prediction Wearable</div>
                 </div>
             </div>
             <!-- Modal division -->
@@ -168,6 +172,88 @@
                         had envisioned, and JavaScript to add in functionality and finishing touches resulted in what you are seeing right now!
                     </p>
                     <img src = "website.png" alt = "Website Image" style = "width:100%">
+                </div>
+             </div>
+             <div id = "modal5" class = "project-modal">
+                <div class = "modal-content">
+                    <span class = "close">&times;</span>
+                    <h2>Auralert Seizure Prediction Wearable</h2>
+                    <p>
+                        Auralert is a non-invasive, wearable system that predicts tonic-clonic seizures for people with drug-resistant epilepsy, 
+                        giving them time to move to a safe space. Along with a four-person team, I took the project from problem definition through a working, integrated prototype, 
+                        following a full design control process: stakeholder interviews with clinicians and patients, gap analysis, idea screening and scoring, 
+                        proof-of-principle testing, FMEA, and regulatory and ethics reviews. The system combines a behind-the-ear 3-lead EEG electrode holder, a custom PCB 
+                        in a back-mounted processing unit with an adjustable fabric harness, and a dual-input machine learning model 
+                        (a CNN on raw EEG plus an MLP on bandpower features). The model is hosted on a web server and classifies a user's state as interictal, pre-ictal, 
+                        or ictal. Classifications are sent to an iPhone app that alerts the user when a seizure is imminent or underway.<br><br>
+
+                        Across the project we designed, built, and tested every layer of this pipeline. On the hardware side, we built an analog front-end to capture EEG signals and validated it against a 
+                        laboratory-grade iWorx EEG system, with matching spectral content. We also iterated through 3D-printed and cast behind-the-ear enclosures and a 
+                        custom PCB. On the software side, we designed a dual-input classifier which reached 0.92 accuracy and a 0.959 ROC-AUC on held-out CHB-MIT clinical EEG data (when detecting seizures). 
+                        A Wi-Fi-enabled microcontroller transmits EEG data to a FastAPI-hosted model, and classifications are delivered 
+                        to an iPhone app that alerts the user. In full-pipeline testing on non-epileptic subjects, the wearable classified interictal states at 
+                        nearly 100% while stationary or moving the head. Walking introduced motion artifacts that degraded performance, which we identified as the main 
+                        target for future work along with clinical trials on epileptic patients and larger training datasets. The project gave me hands-on experience 
+                        with biopotential circuit design, embedded systems, ML for biosignals, rapid prototyping, and design control documentation.
+                    </p>
+                    <div class = "modal-images">
+                        <figure>
+                            <img src="Auralert_Assembly_Rendering.png" alt="Auralert Assembly" style="width:100%">
+                            <figcaption>Rendering of the full Auralert assembly, showing the behind-the-ear electrode holder, back-mounted processing unit, and harness.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="Alpha_Power_Variance_From_Occipital_Lobe_EEG.png" alt="Alpha Power" style="width:100%">
+                            <figcaption>Alpha-band (8–12 Hz) power from occipital lobe EEG recordings, compared across eyes-open and eyes-closed conditions.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="auralert_circuit_solution.png" alt="Circuit Flow" style="width:100%">
+                            <figcaption>Signal flow through the EEG analog front end, from electrode input through amplification and filtering to digitization.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="Auralert_Final_Prototype.png" alt="Final Prototype" style="width:100%">
+                            <figcaption>The final Auralert prototype: behind-the-ear electrode holder, back-mounted processing unit, and adjustable fabric harness.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="Auralert_Pipeline.png" alt="Auralert Pipeline" style="width:100%">
+                            <figcaption>End-to-end Auralert pipeline, from EEG acquisition and wireless transmission to ML classification and iPhone alerts.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="EEG_Circuit.png" alt="EEG Circuit" style="width:100%">
+                            <figcaption>Assembled EEG acquisition circuit used to validate the analog front end.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="EEG_Circuit_Schematic.png" alt="EEG Circuit Schematic" style="width:100%">
+                            <figcaption>Schematic of the EEG analog front end, including the amplification, high-pass, low-pass, and notch filtering stages.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="EEG_ML_Outline.png" alt="Dual-Input Model" style="width:100%">
+                            <figcaption>Dual-input model architecture: a CNN processes raw EEG while an MLP processes extracted bandpower features.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="EEG_Processing_ECAD.png" alt="ECAD" style="width:100%">
+                            <figcaption>ECAD layout of the custom PCB for EEG signal processing and wireless transmission.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="EEG_Signal_Detection.png" alt="Signal Detection" style="width:100%">
+                            <figcaption>EEG signal detection results comparing the Auralert front end against the iWorx laboratory-grade system.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="Processing_Unit_Rendering.png" alt="Processing Unit 3D Render" style="width:100%">
+                            <figcaption>3D rendering of the back-mounted processing unit enclosure housing the PCB and battery.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="Real_World_Interictal.png" alt="Real World Interictal Classifications" style="width:100%">
+                            <figcaption>Percentage of correct interictal classifications from non-epileptic test subjects across stationary, head movement, and walking conditions.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="Seizure_Detection_Matrix.png" alt="Detection Confusion Matrix" style="width:100%">
+                            <figcaption>Confusion matrix for ictal versus non-ictal seizure detection on held-out CHB-MIT clinical EEG data.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="Seizure_Prediction_Matrix.png" alt="Prediction Confusion Matrix" style="width:100%">
+                            <figcaption>Confusion matrix for the model's interictal, pre-ictal, and ictal state predictions.</figcaption>
+                        </figure>
+                    </div>
                 </div>
              </div>
         </div>
