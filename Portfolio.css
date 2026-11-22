@@ -502,4 +502,27 @@ html, body {
     .parallax2 { text-align: center; }
     .email, .tm { justify-content: center; }
     .linkicon { display: block; text-align: center; }
+
+        /* Fix modal overflow */
+    .project-modal,
+    .modal-content,
+    .modal-content * {
+        box-sizing: border-box;
+    }
+
+    .project-modal {
+        width: 100%;          /* instead of 100vw, which can include the scrollbar */
+        overflow-x: hidden;
+    }
+
+    .modal-content {
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .modal-content img,
+    .modal-content figure,
+    .modal-content figcaption {
+        max-width: 100%;
+    }
 }
